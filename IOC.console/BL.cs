@@ -8,11 +8,12 @@ namespace IOC.console
 {
     public class BL
     {
-        private DAL _dal { get; set; }
+        private IDAL _dal { get; set; }
 
         public BL()
         {
-            //Bl Dal kısmını artık dısarıdan alacak
+            //BL artık dal hakkında hıcbır bılgı sahıbı degıl
+            //sadece lazım olan metotlara erısebılıyor yanı soyutlandı
             _dal = DALFactory.GetDAL();
         }
         public List<Product> GetProducts()

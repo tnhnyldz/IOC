@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IOC.console
 {
-    public class DAL
+    public class DAL : IDAL
     {
         public List<Product> GetProducts()
         {
@@ -16,6 +16,11 @@ namespace IOC.console
                new Product{Id= 3,Name="Kalem3",Price=100,Stock=200},
                new Product{Id= 4,Name="Kalem4",Price=100,Stock=200}
             };
+        }
+        public int Sum()
+        {
+            return 100;
+
         }
 
     }
