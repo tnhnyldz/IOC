@@ -10,11 +10,10 @@ namespace IOC.console
     {
         private IDAL _dal { get; set; }
 
-        public BL()
+        public BL(IDAL dal)
         {
-            //BL artık dal hakkında hıcbır bılgı sahıbı degıl
-            //sadece lazım olan metotlara erısebılıyor yanı soyutlandı
-            _dal = DALFactory.GetDAL();
+            //dal ınjected
+            _dal = dal;
         }
         public List<Product> GetProducts()
         {

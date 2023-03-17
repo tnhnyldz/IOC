@@ -9,6 +9,6 @@ namespace IOC.console
     public interface IDAL
     {
         List<Product> GetProducts();
-       //int Sum();
+        //int Sum();
     }
 }
